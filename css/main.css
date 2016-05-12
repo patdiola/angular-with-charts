@@ -1,0 +1,51 @@
+/* x-browser reset */
+
+html, body, div {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+body {
+  font-family: helvetica, arial, verdana, sans-serif;
+  color: #E0E0E3;
+  background: #3e3e40;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 20px 0px;
+}
+
+button {
+  margin: 20px 0px;
+  border-radius: 0px;
+  background-color: #222222;
+  border: none;
+  padding: 8px 12px;
+  color: #E0E0E3;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+button:last-of-type {
+  float: right;
+}
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.highcharts-container {
+  width: 800px;
+}

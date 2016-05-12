@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html ng-app="charts">
+  <head>
+    <meta charset="utf-8" />
+    <title>Angular with Chart</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  </head>
+
+  <body ng-controller="chartController">
+
+    <div class="main">
+      <h1>Angular W/ Highcharts Example</h1>
+
+      <chart-example id="chart-container" options="exampleOptions">Chart Example</chart-example>
+
+      <button ng-click="changeType('line')">Line</button>
+      <button ng-click="changeType('column')">Bar</button>
+      <button ng-click="changeType('scatter')">Scatter</button>
+      <button ng-click="changeType('area')">Area</button>
+      <button ng-click="changeType('areaspline')">Area Spline</button>
+      <button ng-click="changeType('spline')">Spline</button>
+
+      <button ng-click="randomizeSeries()">Randomize Series</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script type="text/javascript" src="js/chart-theme.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
