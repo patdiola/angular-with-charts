@@ -22,7 +22,6 @@ angular.module('charts', [])
         series.data.forEach(function(data) {
           var change = Math.random() * (2 - 0);
           var random = Math.floor(Math.random() * (2 - 0));
-          console.log(random);
           updatedData.push([data.x, (random === 0) ? data.y - change : data.y + change]);
         });
 
